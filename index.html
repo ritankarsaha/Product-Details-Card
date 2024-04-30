@@ -1,103 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Product Page</title>
 </head>
+
 <body>
     <div class="cart-container">
-  <img src="/public/cart.jpeg" alt="Cart" id="cartIcon">
-  <div class="cart-items" id="cartItems">
-    
-  </div>
-</div>
+        <img src="https://github.com/ritankarsaha/Product-Details-Card/blob/main/public/cart.jpeg" alt="Cart"
+            id="cartIcon">
+        <div class="cart-items" id="cartItems">
+
+        </div>
+    </div>
     <div class="product-container">
-        
+
         <div class="product-image">
             <img src="/public/mainimage.jpg" alt="Product Main Image" id="mainImage">
-            
+
             <div class="thumbnails">
-                <img src="/public/thumbnail.jpg" alt="Thumbnail 1" >
-                
+                <img src="/public/thumbnail.jpg" alt="Thumbnail 1">
+
             </div>
         </div>
 
-        
+
         <div class="product-details">
             <span class="brand-name">Marmeto</span>
             <h1>Embrace Sideboard </h1>
-           <div class="price-container">
-    <div class="discounted-price-container">
-        <p class="final-price"></p>
-        <p class="discount-percentage">35% discount</p>
-    </div>
-    <p class="original-price">$19999.00</p>
-</div>
+            <div class="price-container">
+                <div class="discounted-price-container">
+                    <p class="final-price"></p>
+                    <p class="discount-percentage">35% discount</p>
+                </div>
+                <p class="original-price">$19999.00</p>
+            </div>
             <div class="color-selection">
-    <p class="textmsg">Choose a Color</p>
-    <div class="color-options">
-        <label class="color-option">
-            <input type="radio" name="color" value="Beige" id="colorWhite" checked>
-            <span class="color-label" style="background-color: #8d7346;"></span>
-        </label>
-        <label class="color-option">
-            <input type="radio" name="color" value="Light-Green" id="colorGreen">
-            <span class="color-label" style="background-color: #64cb28;"></span>
-        </label>
-        <label class="color-option">
-            <input type="radio" name="color" value="Cyan" id="colorGreen">
-            <span class="color-label" style="background-color: #2e1ca2;"></span>
-        </label>
-        <label class="color-option">
-            <input type="radio" name="color" value="Pinkish-Red" id="colorGreen">
-            <span class="color-label" style="background-color: #cd5f98;"></span>
-        </label>
-    </div>
-</div>
+                <p class="textmsg">Choose a Color</p>
+                <div class="color-options">
+                    <label class="color-option">
+                        <input type="radio" name="color" value="Beige" id="colorWhite" checked>
+                        <span class="color-label" style="background-color: #8d7346;"></span>
+                    </label>
+                    <label class="color-option">
+                        <input type="radio" name="color" value="Light-Green" id="colorGreen">
+                        <span class="color-label" style="background-color: #64cb28;"></span>
+                    </label>
+                    <label class="color-option">
+                        <input type="radio" name="color" value="Cyan" id="colorGreen">
+                        <span class="color-label" style="background-color: #2e1ca2;"></span>
+                    </label>
+                    <label class="color-option">
+                        <input type="radio" name="color" value="Pinkish-Red" id="colorGreen">
+                        <span class="color-label" style="background-color: #cd5f98;"></span>
+                    </label>
+                </div>
+            </div>
             <div class="size-selection">
-  <p class="textmsg">Choose a Size</p>
-  <label class="size-option">
-    <input type="radio" name="size" value="small" id="sizeSmall"  checked>
-    <span class="size-label">Small</span>
-  </label>
-  <label class="size-option">
-    <input type="radio" name="size" value="medium" id="sizeMedium">
-    <span class="size-label">Medium</span>
-  </label>
-  <label class="size-option">
-    <input type="radio" name="size" value="medium" id="sizeLarge">
-    <span class="size-label">Large</span>
-  </label>
-  <label class="size-option">
-    <input type="radio" name="size" value="medium" id="sizeExtraLarge">
-    <span class="size-label">Extra Large</span>
-  </label>
-  <label class="size-option">
-    <input type="radio" name="size" value="medium" id="sizeXXL">
-    <span class="size-label">XXL</span>
-  </label>
-</div>
+                <p class="textmsg">Choose a Size</p>
+                <label class="size-option">
+                    <input type="radio" name="size" value="small" id="sizeSmall" checked>
+                    <span class="size-label">Small</span>
+                </label>
+                <label class="size-option">
+                    <input type="radio" name="size" value="medium" id="sizeMedium">
+                    <span class="size-label">Medium</span>
+                </label>
+                <label class="size-option">
+                    <input type="radio" name="size" value="medium" id="sizeLarge">
+                    <span class="size-label">Large</span>
+                </label>
+                <label class="size-option">
+                    <input type="radio" name="size" value="medium" id="sizeExtraLarge">
+                    <span class="size-label">Extra Large</span>
+                </label>
+                <label class="size-option">
+                    <input type="radio" name="size" value="medium" id="sizeXXL">
+                    <span class="size-label">XXL</span>
+                </label>
+            </div>
 
 
-  
+
             <div class="quantity-selection">
                 <p class="textmsg"> Choose quantity</p>
                 <div>
-                <button id="decreaseQuantity">-</button>
-                <span id="quantity">1</span>
-                <button id="increaseQuantity">+</button>
+                    <button id="decreaseQuantity">-</button>
+                    <span id="quantity">1</span>
+                    <button id="increaseQuantity">+</button>
                 </div>
             </div>
             <button class="add-to-cart-btn" id="addToCartBtn">Add To Cart</button>
             <p id="cartMessage" class="cart-message"></p>
             <p class="product-description">
-                The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.
+                The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and
+                look great, this storage solution is both functional and attractive. It fits seamlessly into any home
+                decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style,
+                durability, and reliability.
             </p>
         </div>
     </div>
 
     <script src="./script.js"></script>
 </body>
+
 </html>
